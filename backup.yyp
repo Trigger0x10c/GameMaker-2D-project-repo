@@ -11,7 +11,7 @@
     {"id":{"name":"sfx_steps","path":"sounds/sfx_steps/sfx_steps.yy",},"order":3,},
     {"id":{"name":"Homes","path":"tilesets/Homes/Homes.yy",},"order":0,},
     {"id":{"name":"objSettings","path":"objects/objSettings/objSettings.yy",},"order":1,},
-    {"id":{"name":"macros","path":"scripts/macros/macros.yy",},"order":0,},
+    {"id":{"name":"macros1","path":"scripts/macros1/macros1.yy",},"order":0,},
     {"id":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},"order":4,},
     {"id":{"name":"NecoArc","path":"objects/NecoArc/NecoArc.yy",},"order":0,},
     {"id":{"name":"NecoSprintLeft","path":"sprites/NecoSprintLeft/NecoSprintLeft.yy",},"order":4,},
@@ -89,7 +89,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"HUD Elements","folderPath":"folders/UI/HUD Elements.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Menu","folderPath":"folders/UI/Menu.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Textbox","folderPath":"folders/UI/Textbox.yy","order":2,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"CharacterSchmovement","folderPath":"folders/Scripts/CharacterSchmovement.yy","order":2,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"movementmacros","folderPath":"folders/Scripts/movementmacros.yy","order":2,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
