@@ -1,42 +1,34 @@
-/// @description Insert description here
-// You can write your code in this editor
-if (keyboard_check(ord("D")) && place_free(x + CollisionSpeed, y)) {
-	x += WalkSpeed
-	sprite_index = NecoWalk;
-	image_xscale = 1;
-}
-else if (keyboard_check(ord("A")) && place_free(x - CollisionSpeed, y)) {
-	x -= WalkSpeed
-	sprite_index = NecoWalk;
-	image_xscale = -1;
-}
-else {
-	sprite_index = NecoIdle;
-}
-if (keyboard_check(ord("S")) && place_free(x, y + CollisionSpeed)) {
-	y += WalkSpeed
-	sprite_index = NecoWalk;
-}
-else if (keyboard_check(ord("W")) && place_free(x, y - CollisionSpeed)) {
-	y -= WalkSpeed
-	sprite_index = NecoWalk;
-}
+right_key = keyboard_check(vk_right) || keyboard_check(ord("D"));
+left_key = keyboard_check(vk_left) || keyboard_check(ord("A"));
+up_key = keyboard_check(vk_up) || keyboard_check(ord("W"));
+down_key = keyboard_check(vk_down) || keyboard_check(ord("S"));
 
-if (keyboard_check(ord("D")) && place_free(x + CollisionSpeed, y) && keyboard_check(vk_shift)) {
-	x += SprintSpeed
-	sprite_index = NecoSprint;
-	image_xscale = 1;
+//get xspeed and yspeed
+xspeed = (right_key - left_key) * walk_speed;
+yspeed = (down_key - up_key) * walk_speed;
+
+//set sprite
+if xspeed > 0 {face = RIGHT};
+if xspeed < 0 {face = LEFT};
+
+mask_index = idle[RIGHT]
+sprite_index = sprite[face]
+
+if xspeed == 0 && yspeed = 0
+{
+	sprite_index = idle[face];
 }
-else if (keyboard_check(ord("A")) && place_free(x - CollisionSpeed, y) && keyboard_check(vk_shift)) {
-	x -= SprintSpeed
-	sprite_index = NecoSprint;
-	image_xscale = -1;
+//collisions
+if place_meeting(x + xspeed, y, obj_wall)
+{
+xspeed = 0;
 }
-if (keyboard_check(ord("S")) && place_free(x, y + CollisionSpeed) && keyboard_check(vk_shift)) {
-	y += SprintSpeed
-	sprite_index = NecoSprint;
+if place_meeting(x, y + yspeed, obj_wall)
+{
+yspeed = 0;
 }
-else if (keyboard_check(ord("W")) && place_free(x, y - CollisionSpeed) && keyboard_check(vk_shift)) {
-	y -= SprintSpeed
-	sprite_index = NecoSprint;
-}
+//move
+x += xspeed;
+y += yspeed;
+//depth
+USEDEPTH

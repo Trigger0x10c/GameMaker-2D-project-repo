@@ -1,6 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+	room_goto(target_room);
+		NecoArc.x = target_x;
+		NecoArc.y = target_y;
 
-
-
-
+image_speed = -1;
