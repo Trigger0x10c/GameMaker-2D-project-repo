@@ -77,6 +77,6 @@
   "nineSlice": null,
   "parent": {
     "name": "NecoArcChaos",
-    "path": "folders/Sprites/CharacterSprites/NecoArcChaos.yy",
+    "path": "folders/Sprites/Character Sprites/NecoArcChaos.yy",
   },
 }
