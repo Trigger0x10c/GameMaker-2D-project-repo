@@ -11,6 +11,7 @@ function scr_game_script(_text_id){
 		scr_text("I bought some fresh coffee beans yesterday... I'm gonna try to bring out their taste", "Chaos");
 		 scr_text_float(13, 18);		
 			scr_option("Sure, I'll join you", "NAC - 1.1");
+			room_goto(CardGame);
 			scr_option("Sorry, too busy right now", "NAC - 1.2");
 			
 		break;
