@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "NecoArc",
   "spriteId": {
-    "name": "NecoIdleRight",
-    "path": "sprites/NecoIdleRight/NecoIdleRight.yy",
+    "name": "spr_mc_idle_right",
+    "path": "sprites/spr_mc_idle_right/spr_mc_idle_right.yy",
   },
   "solid": false,
   "visible": true,
